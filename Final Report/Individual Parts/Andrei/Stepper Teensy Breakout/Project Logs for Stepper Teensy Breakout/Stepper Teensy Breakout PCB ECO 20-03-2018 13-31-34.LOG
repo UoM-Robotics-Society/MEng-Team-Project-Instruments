@@ -1,0 +1,30 @@
+Removed Pin From Net: NetName=STEP1 Pin=D4-2
+Removed Pin From Net: NetName=STEP1 Pin=R4-2
+Change Component Comment : Designator=C1 Old Comment= New Comment=Cap2
+Change Component Comment : Designator=C2 Old Comment= New Comment=Cap2
+Change Component Comment : Designator=R1 Old Comment= New Comment=Res Semi
+Change Component Comment : Designator=R2 Old Comment= New Comment=Res Semi
+Change Component Comment : Designator=R3 Old Comment= New Comment=Res Semi
+Change Component Comment : Designator=R4 Old Comment= New Comment=Res Semi
+Change Component Comment : Designator=D1 Old Comment=LED1 New Comment=LED2
+Change Component Comment : Designator=D3 Old Comment=LED3 New Comment=LED2
+Added Component: Designator=C3(CAPR5-4X5)
+Added Component: Designator=C4(CAPR5-4X5)
+Added Component: Designator=C5(CAPR5-4X5)
+Added Component: Designator=C6(CAPR5-4X5)
+Added Pin To Net: NetName=VMOT Pin=C3-1
+Added Pin To Net: NetName=GND Pin=C3-2
+Added Pin To Net: NetName=VMOT Pin=C4-1
+Added Pin To Net: NetName=GND Pin=C4-2
+Added Pin To Net: NetName=VMOT Pin=C5-1
+Added Pin To Net: NetName=GND Pin=C5-2
+Added Pin To Net: NetName=VMOT Pin=C6-1
+Added Pin To Net: NetName=GND Pin=C6-2
+Added Pin To Net: NetName=STEP4 Pin=D4-2
+Added Pin To Net: NetName=STEP4 Pin=R4-2
+Added Member To Class: ClassName=Stepper Teensy Breakout Member=Component C3 
+Added Member To Class: ClassName=Stepper Teensy Breakout Member=Component C4 Cap2
+Added Member To Class: ClassName=Stepper Teensy Breakout Member=Component C5 Cap2
+Added Member To Class: ClassName=Stepper Teensy Breakout Member=Component C6 Cap2
+Added Room: Name=Stepper Teensy Breakout
+Added Room: Name=Stepper Teensy Breakout p2

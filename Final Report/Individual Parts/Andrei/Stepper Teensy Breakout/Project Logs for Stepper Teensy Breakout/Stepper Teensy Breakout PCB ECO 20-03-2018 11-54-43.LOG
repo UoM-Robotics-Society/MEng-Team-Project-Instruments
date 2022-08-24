@@ -1,0 +1,13 @@
+Added Pin To Net: NetName=CS1 Pin=DSS L1-8
+Added Pin To Net: NetName=CS1 Pin=Teensy R-7
+Added Net: Name=CS1
+Added Pin To Net: NetName=CS2 Pin=DSS L2-8
+Added Pin To Net: NetName=CS2 Pin=Teensy R-8
+Added Net: Name=CS2
+Added Pin To Net: NetName=CS3 Pin=DSS L3-8
+Added Pin To Net: NetName=CS3 Pin=Teensy R-9
+Added Net: Name=CS3
+Added Pin To Net: NetName=CS4 Pin=DSS L4-8
+Added Pin To Net: NetName=CS4 Pin=Teensy R-10
+Added Net: Name=CS4
+Added Room: Name=Stepper Teensy Breakout

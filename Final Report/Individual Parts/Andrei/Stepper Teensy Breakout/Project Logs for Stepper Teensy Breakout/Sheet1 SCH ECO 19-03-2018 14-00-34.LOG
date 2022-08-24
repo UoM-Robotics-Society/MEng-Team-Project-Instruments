@@ -1,0 +1,19 @@
+Remove Pin=Driver Board Left1-1 From Net=ENA
+Remove Pin=Driver Board Left1-8 From Net=DIR
+Remove Pin=Driver Board Left2-1 From Net=ENA
+Remove Pin=Driver Board Left2-8 From Net=DIR
+Remove Pin=Driver Board Left3-1 From Net=ENA
+Remove Pin=Driver Board Left3-8 From Net=DIR
+Remove Pin=Driver Board Left4-1 From Net=ENA
+Remove Pin=Driver Board Left4-8 From Net=DIR
+Remove Pin=DSS Left1-6 From Net=SDA
+Remove Pin=DSS Left1-7 From Net=SCK
+Remove Pin=DSS Left2-6 From Net=SDA
+Remove Pin=DSS Left2-7 From Net=SCK
+Remove Pin=DSS Left2-8 From Net=CS
+Remove Pin=DSS Left3-6 From Net=SDA
+Remove Pin=DSS Left3-7 From Net=SCK
+Remove Pin=DSS Left3-8 From Net=CS
+Remove Pin=DSS Left4-6 From Net=SDA
+Remove Pin=DSS Left4-7 From Net=SCK
+Remove Pin=DSS Left4-8 From Net=CS

@@ -1,0 +1,139 @@
+
+ /********UNIVERSITY OF MANCHESTER SCHOOL OF EE&E*****************/
+ /*********FOURTH YEAR PROJECT: ROBOT ORCHESTRA*******************/
+ 
+ /*Test code for stepper motors playing Baba Black Sheep
+ * Written by: Francesco Fumagalli
+ * email: francesco.fum@gmail.com
+ */
+
+/*CONNECTIONS:
+ * DRIVER       ARDUINO       STEPPER
+ * 2A                         motor coil 2
+ * 1A                         motor coil 1
+ * 2B                         motor coil 2
+ * 1B                         motor coil 2
+ * Vdd            +5V
+ * GND            GND
+ * STEP           3
+ * DIRECTION      4
+ * MS1            5
+ * MS2            6
+ * MS3            7
+ * SLEEP-RST
+ * ENABLE         8
+ */
+
+
+
+
+#define DIR  4
+#define EN   8
+#define STEP 3
+#define MS1  5
+#define MS2  6
+#define MS3  7
+
+#define STEP2 8
+#define DIR2 9
+
+/*
+//frequency of notes (8th octave)
+#define G 6271.93
+#define A 7040
+#define B 7902.13
+#define C 4186.01
+#define D 4698.63
+#define E 5274.04
+#define F 5587.65
+*/
+
+//frequency of notes (6th octave)
+
+#define G 1567.98
+#define A 1760.00
+#define B 1975.53
+#define C 1046.50  
+#define D 1174.66
+#define E 1318.51
+#define F 1396.91
+
+//#define Cs 2093 (7th octave)
+#define Cs 1975.33 
+
+long unsigned int Time;
+unsigned int timeArray[] = {1000}; //1sec
+
+
+float noteArray[] ={C,D,C,F,E,C,D,C,G,F,C,Cs,A,F,E,D,B,A,F,G,F};//happy birthday
+float noteTime[] ={0.579, 0.773, 0.773, 0.773, 1.546, 0.579, 0.773, 0.773, 0.773, 1.546, 0.579, 0.773, 0.773, 0.773, 0.773, 0.773, 0.579, 0.773, 0.773, 0.773, 2.404 };
+
+/*
+float noteArray[] = {C,D,E,F,G,A,B};
+float noteTime[] = {0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5};
+*/
+
+ 
+void setup() {
+pinMode(DIR,OUTPUT);
+pinMode(EN,OUTPUT);
+pinMode(STEP,OUTPUT);
+pinMode(MS1,OUTPUT);
+pinMode(MS2,OUTPUT);
+pinMode(MS3,OUTPUT);
+
+pinMode(DIR2,OUTPUT);
+pinMode(STEP2,OUTPUT);
+
+Serial.begin(9600);
+Serial.println("Starting...");
+
+digitalWrite(EN,LOW); //enable the driver
+
+//full step 0,0,0
+//truth table in datasheet
+digitalWrite(MS1,LOW);
+digitalWrite(MS2,LOW);
+digitalWrite(MS3,LOW);
+digitalWrite(DIR,HIGH);
+
+digitalWrite(DIR2,HIGH);
+}
+
+
+void loop() {
+
+for(int i=0;i<(sizeof(noteArray)/sizeof(float));i++){
+  unsigned long Time=millis();
+
+  Serial.println("millis() is: ");
+  Serial.println(millis());
+  
+  Serial.println("noteTime is: ");
+  Serial.println(noteTime[i]*1E3);
+  while((millis()-Time)<(noteTime[i]*1E3)){
+    note(noteArray[i]); 
+  }
+}
+
+//while(1);
+}
+
+
+
+void note(float frequency){
+  
+  float period =(1/frequency); //calculate the period
+  period = ((period/2)*1E6); //divide the period by two and convert into second
+  digitalWrite(STEP,HIGH);
+  delayMicroseconds(period); //use microseconds instead of milliseconds for higher resolution
+  digitalWrite(STEP,LOW);
+  delayMicroseconds(period);  
+
+
+  digitalWrite(STEP2,HIGH);
+  delayMicroseconds(period); //use microseconds instead of milliseconds for higher resolution
+  digitalWrite(STEP2,LOW);
+  delayMicroseconds(period);  
+  
+}

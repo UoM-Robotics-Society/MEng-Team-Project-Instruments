@@ -1,0 +1,19 @@
+Removed Pin From Net: NetName=VMOT Pin=-1
+Removed Pin From Net: NetName=GND Pin=-2
+Removed Pin From Net: NetName=2B_D Pin=-3
+Removed Pin From Net: NetName=2A_D Pin=-4
+Removed Pin From Net: NetName=1A_D Pin=-5
+Removed Pin From Net: NetName=1B_D Pin=-6
+Removed Pin From Net: NetName=5V Pin=-7
+Removed Pin From Net: NetName=GND Pin=-8
+Change Component Footprint: Designator=D1 Old Footprint=CAPR5-4X5 New Footprint=3.2X1.6X1.1
+Change Component Footprint: Designator=D2 Old Footprint=CAPR5-4X5 New Footprint=3.2X1.6X1.1
+Change Component Footprint: Designator=D3 Old Footprint=CAPR5-4X5 New Footprint=3.2X1.6X1.1
+Change Component Footprint: Designator=D4 Old Footprint=CAPR5-4X5 New Footprint=3.2X1.6X1.1
+Change Component Designator: OldDesignator=M1 NewDesignator=Motor 1
+Change Component Designator: OldDesignator=M2 NewDesignator=Motor 2
+Change Component Designator: OldDesignator=M3 NewDesignator=Motor 3
+Change Component Designator: OldDesignator=M4 NewDesignator=Motor 4
+Added Component: Designator=ESP(HDR2X4)
+Added Member To Class: ClassName=Stepper Teensy Breakout Member=Component ESP Header 4X2
+Added Room: Name=Stepper Teensy Breakout

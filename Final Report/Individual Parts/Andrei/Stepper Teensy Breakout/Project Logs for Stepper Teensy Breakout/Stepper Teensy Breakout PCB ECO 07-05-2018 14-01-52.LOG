@@ -1,0 +1,21 @@
+Removed Pin From Net: NetName=5V Pin=C2-1
+Removed Pin From Net: NetName=5V Pin=DSS L1-1
+Removed Pin From Net: NetName=5V Pin=DSS L1-2
+Removed Pin From Net: NetName=5V Pin=DSS L2-1
+Removed Pin From Net: NetName=5V Pin=DSS L2-2
+Removed Pin From Net: NetName=5V Pin=DSS L3-1
+Removed Pin From Net: NetName=5V Pin=DSS L3-2
+Removed Pin From Net: NetName=5V Pin=DSS L4-1
+Removed Pin From Net: NetName=5V Pin=DSS L4-2
+Removed Pin From Net: NetName=5V Pin=Sw Reg-3
+Added Pin To Net: NetName=3V3 Pin=C2-1
+Added Pin To Net: NetName=3V3 Pin=DSS L1-1
+Added Pin To Net: NetName=3V3 Pin=DSS L1-2
+Added Pin To Net: NetName=3V3 Pin=DSS L2-1
+Added Pin To Net: NetName=3V3 Pin=DSS L2-2
+Added Pin To Net: NetName=3V3 Pin=DSS L3-1
+Added Pin To Net: NetName=3V3 Pin=DSS L3-2
+Added Pin To Net: NetName=3V3 Pin=DSS L4-1
+Added Pin To Net: NetName=3V3 Pin=DSS L4-2
+Added Pin To Net: NetName=3V3 Pin=Sw Reg-3
+Added Room: Name=Stepper Teensy Breakout
